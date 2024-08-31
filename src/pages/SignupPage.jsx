@@ -26,7 +26,7 @@ const SignupPage = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "https://kudosware-task-backend.vercel.app/",
+        "https://kudosware-task-backend.vercel.app/api/v1/signup",
         formData,
         {
           headers: {
